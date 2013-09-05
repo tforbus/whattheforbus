@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Creepster|Changa+One|Bangers);
+@import url(/stylesheets/unsemantic-grid-responsive-tablet.css);
+
+// ** Variables **
+@background: #312c2c;
+@primaryFont: #a5ee4d;//lighten(saturate(@background, 10%), 40%);
+@linkColor: @primaryFont;
+@propColor: #e25959;
+
+// ** Mixins **
+.skew(@x, @y) {
+	transform: skew(@x, @y);
+	-ms-transform: skew(@x, @y); /* IE 9 */
+	-webkit-transform: skew(@x, @y); /* Safari and Chrome */
+}
+
+.rotate(@deg) {
+	transform: rotate(@deg);
+    -deg-ms-transform: rotate(@deg); /* IE 9 */
+    -webkit-transform: rotate(@deg); /* Safari and Chrome */
+}
+
+.lol-container {
+	max-width: 650px;
+}
+
+
+body {
+	background-color: @background;
+	background-image: url('/images/splatter.png');
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	color: @primaryFont;
+	font-size: 16px;
+}
+
+a {
+	color: @linkColor;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Creepster', 'Helvetica', 'Arial', sans-serif;
+	font-size: 5.0em;
+	text-shadow: 0 10px 0 darken(@primaryFont, 30%);
+	margin: 0;
+	margin-bottom: 0.8em;
+	margin-top: 0.6em;
+}
+
+#title {
+	text-align: center;
+}
+
+
+.prop-container {
+	.rotate(-3deg);
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.prop {
+	font-family: 'Bangers', 'Helvetica', 'Arial', sans-serif;
+	color: white;
+	text-align: left;
+	padding: 0.4em 1.3em;
+	font-size: 1.7em;
+	background-color: @propColor;
+	font-weight: 400;
+	margin: 0 auto;	
+	margin-bottom: 0.3em;
+	letter-spacing: 1px;
+
+	&.first {
+		.skew(-10deg, -2deg);
+	}
+
+	&.second {
+		.skew(-10deg, -2deg);
+	}
+
+	&.third {
+		.skew(-10deg, -2deg);
+		margin-bottom: 30px;
+	}
+}
+
+.external-container {
+	margin-bottom: 3.0em;
+}
+
+.external-header {
+	font-family: 'Bangers', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.3em;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.external {
+	font-family: 'Creepster', 'Helvetica', 'Arial', sans-serif;
+	font-size: 3.0em;
+	display: block;
+	text-align: center;	
+	text-shadow: 0 5px 0 darken(@primaryFont, 30%);
+}
+
+.external:hover {
+	color: lighten(@primaryFont, 10%);
+	text-shadow: 0 5px darken(@primaryFont, 20%);
+}
+
+#footer {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Bangers', 'Helvetica', 'Arial', sans-serif;
+	font-size: 3.0em;
+	text-align: center;
+
+	span {
+
+	}
+}
+.screamo {
+	margin: 0 auto;
+}
