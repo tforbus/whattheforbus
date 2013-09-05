@@ -1,8 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Creepster|Changa+One|Bangers);
+@import url(http://fonts.googleapis.com/css?family=Creepster|Bangers);
 
 @import url(/stylesheets/unsemantic-grid-responsive-tablet.css);
 .lol-container {
   max-width: 650px;
+  background-image: url('/images/skull.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 body {
   background-color: #312c2c;
@@ -78,6 +81,11 @@ h1 {
 
   margin-bottom: 30px;
 }
+@media screen and (max-width: 400px) {
+  .prop {
+    font-size: 1.3em;
+  }
+}
 .external-container {
   margin-bottom: 3.0em;
 }
@@ -99,11 +107,21 @@ h1 {
   color: #bdf27c;
   text-shadow: 0 5px #73c213;
 }
+.action {
+  font-family: 'Bangers', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.0em;
+  display: block;
+  text-align: center;
+  margin-bottom: 0.6em;
+}
 #footer {
   margin: 0 auto;
   font-family: 'Bangers', 'Helvetica', 'Arial', sans-serif;
   font-size: 3.0em;
   text-align: center;
+}
+#footer img {
+  max-width: 100%;
 }
 .screamo {
   margin: 0 auto;
