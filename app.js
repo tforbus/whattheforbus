@@ -36,6 +36,6 @@ http.createServer(app).listen(app.get('port'), function(){
 // suck it, heroku
 // make a request every 50 minutes to kep the site awake
 function poller() {
-	http.request('http://whattheforbus.com', function() {})
+	http.request('http://whattheforbus.com/ping', function() {})
 }
 setInterval(poller, 1000*60*50)
