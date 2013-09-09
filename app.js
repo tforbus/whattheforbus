@@ -31,3 +31,11 @@ if ('development' == app.get('env')) {
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+// suck it, heroku
+// make a request every 50 minutes to kep the site awake
+function poller() {
+	http.request('http://whattheforbus.com', function() {})
+}
+setInterval(poller, 1000*60*50)
