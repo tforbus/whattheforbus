@@ -12,4 +12,8 @@ module.exports = function(app) {
 	app.get('/ping', function(req, res) {
 		res.send(200)
 	})
+
+	app.get('/youtube-bookmarklet', function(req, res) {
+		res.render('youtube-bookmarklet')
+	})
 }
