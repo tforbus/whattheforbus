@@ -16,4 +16,8 @@ module.exports = function(app) {
 	app.get('/youtube-bookmarklet', function(req, res) {
 		res.render('youtube-bookmarklet')
 	})
+
+	app.get('/video-pinner', function(req, res) {
+		res.render('youtube-bookmarklet')
+	})
 }
